@@ -1,4 +1,4 @@
-package main.java.com.jake.app.ipma_client;
+package com.jake.app.ipma_client;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

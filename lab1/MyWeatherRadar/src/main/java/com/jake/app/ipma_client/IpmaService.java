@@ -1,4 +1,4 @@
-package main.java.com.jake.app.ipma_client;
+package com.jake.app.ipma_client;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

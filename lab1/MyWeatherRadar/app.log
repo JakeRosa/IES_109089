@@ -1,0 +1,13 @@
+[INFO ] 2023-09-23 18:40:00.660 [com.jake.app.WeatherStarter.main()] WeatherStarter - Retrofit criado.
+[INFO ] 2023-09-23 18:40:00.663 [com.jake.app.WeatherStarter.main()] WeatherStarter - IPMA Service criado.
+[INFO ] 2023-09-23 18:43:24.137 [com.jake.app.WeatherStarter.main()] WeatherStarter - Retrofit criado.
+[INFO ] 2023-09-23 18:43:24.139 [com.jake.app.WeatherStarter.main()] WeatherStarter - IPMA Service criado.
+[INFO ] 2023-09-23 18:45:38.956 [com.jake.app.WeatherStarter.main()] WeatherStarter - Retrofit criado.
+[INFO ] 2023-09-23 18:45:38.959 [com.jake.app.WeatherStarter.main()] WeatherStarter - IPMA Service criado.
+[INFO ] 2023-09-23 18:45:39.169 [com.jake.app.WeatherStarter.main()] WeatherStarter - Resposta recebida.
+[INFO ] 2023-09-23 18:45:39.173 [com.jake.app.WeatherStarter.main()] WeatherStarter - max temp for 2023-09-23 is 22.9
+[ERROR] 2023-09-23 18:46:01.820 [com.jake.app.WeatherStarter.main()] WeatherStarter - Número de argumentos inválido.
+[INFO ] 2023-09-23 18:46:19.084 [com.jake.app.WeatherStarter.main()] WeatherStarter - Retrofit criado.
+[INFO ] 2023-09-23 18:46:19.087 [com.jake.app.WeatherStarter.main()] WeatherStarter - IPMA Service criado.
+[INFO ] 2023-09-23 18:46:19.174 [com.jake.app.WeatherStarter.main()] WeatherStarter - Resposta recebida.
+[ERROR] 2023-09-23 18:46:19.175 [com.jake.app.WeatherStarter.main()] WeatherStarter - No results for this request!
