@@ -11,3 +11,7 @@
 [INFO ] 2023-09-23 18:46:19.087 [com.jake.app.WeatherStarter.main()] WeatherStarter - IPMA Service criado.
 [INFO ] 2023-09-23 18:46:19.174 [com.jake.app.WeatherStarter.main()] WeatherStarter - Resposta recebida.
 [ERROR] 2023-09-23 18:46:19.175 [com.jake.app.WeatherStarter.main()] WeatherStarter - No results for this request!
+[INFO ] 2023-09-23 19:13:35.654 [com.jake.app.WeatherStarter.main()] WeatherStarter - Retrofit criado.
+[INFO ] 2023-09-23 19:13:35.657 [com.jake.app.WeatherStarter.main()] WeatherStarter - IPMA Service criado.
+[INFO ] 2023-09-23 19:13:35.767 [com.jake.app.WeatherStarter.main()] WeatherStarter - Resposta recebida.
+[INFO ] 2023-09-23 19:13:35.776 [com.jake.app.WeatherStarter.main()] WeatherStarter - max temp for 2023-09-23 is 22.9
