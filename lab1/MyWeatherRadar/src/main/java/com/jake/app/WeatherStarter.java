@@ -22,7 +22,7 @@ public class WeatherStarter {
     private static final Logger logger = LogManager.getLogger(WeatherStarter.class);
 
     public static void main(String[] args) {
-        int CITY_ID_AVEIRO;
+        int CITY_ID;
 
         if (args.length != 1) {
             System.out.println("ERRO: Número de argumentos inválido.");
@@ -30,7 +30,7 @@ public class WeatherStarter {
             System.exit(1);
         }
 
-        CITY_ID_AVEIRO = Integer.parseInt(args[0]);
+        CITY_ID = Integer.parseInt(args[0]);
 
         // get a retrofit instance, loaded with the GSon lib to convert JSON into
         // objects
@@ -44,7 +44,7 @@ public class WeatherStarter {
         IpmaService service = retrofit.create(IpmaService.class);
         logger.info("IPMA Service criado.");
         // prepare the call to remote endpoint
-        Call<IpmaCityForecast> callSync = service.getForecastForACity(CITY_ID_AVEIRO);
+        Call<IpmaCityForecast> callSync = service.getForecastForACity(CITY_ID);
 
         try {
             Response<IpmaCityForecast> apiResponse = callSync.execute();
