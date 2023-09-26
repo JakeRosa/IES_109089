@@ -13,7 +13,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import weather.ipma_client.CityForecast;
 import weather.ipma_client.IpmaCityForecast;
-import weather.ipma_client.IpmaDistritsIslands;
+import weather.ipma_client.IpmaDistrictsIslands;
 import weather.ipma_client.IpmaService;
 
 /**
@@ -27,9 +27,6 @@ public class WeatherStarter {
     private static final Logger logger = LogManager.getLogger(WeatherStarter.class);
 
     public static void main(String[] args) {
-        int CITY_ID;
-
-        CITY_ID = 1010500;
 
         // get a retrofit instance, loaded with the GSon lib to convert JSON into
         // objects
@@ -43,22 +40,22 @@ public class WeatherStarter {
         IpmaService service = retrofit.create(IpmaService.class);
         logger.info("IPMA Service criado.");
 
-        Call<IpmaDistritsIslands> callSyncDistrits = service.getDistritsIslands();
+        Call<IpmaDistrictsIslands> callSyncDistrits = service.getDistritsIslands();
 
         List<Integer> distritsIds = new ArrayList<>();
         HashMap<Integer, String> distrits = new HashMap<>();
         int randomDistrit = 0;
 
         try {
-            Response<IpmaDistritsIslands> apiResponse = callSyncDistrits.execute();
-            IpmaDistritsIslands forecast = apiResponse.body();
+            Response<IpmaDistrictsIslands> apiResponse = callSyncDistrits.execute();
+            IpmaDistrictsIslands forecast = apiResponse.body();
             logger.info("Resposta recebida.");
 
             distritsIds = new ArrayList<>();
             distrits = new HashMap<>();
 
             if (forecast != null) {
-                for (IpmaDistritsIslands distrit : forecast.getData()) {
+                for (IpmaDistrictsIslands distrit : forecast.getData()) {
                     distritsIds.add(distrit.getGlobalIdLocal());
                     distrits.put(distrit.getGlobalIdLocal(), distrit.getLocal());
                 }
@@ -89,13 +86,10 @@ public class WeatherStarter {
             if (forecast != null) {
                 List<CityForecast> data = forecast.getData();
                 CityForecast day = data.get(0);
-                System.out.println("max temp for " + day.getForecastDate() + " in " + distrits.get(randomDistrit)
-                        + " is " + Double.parseDouble(day.getTMax()));
                 logger.info(
                         "max temp for " + day.getForecastDate() + " in " + distrits.get(randomDistrit) + " is " +
                                 Double.parseDouble(day.getTMax()));
             } else {
-                System.out.println("No results for this request!");
                 logger.error("No results for this request!");
             }
         } catch (Exception ex) {

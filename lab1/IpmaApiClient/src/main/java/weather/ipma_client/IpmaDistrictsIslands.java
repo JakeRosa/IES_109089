@@ -5,10 +5,10 @@ import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class IpmaDistritsIslands {
+public class IpmaDistrictsIslands {
     @SerializedName("data")
     @Expose
-    private List<IpmaDistritsIslands> data = null;
+    private List<IpmaDistrictsIslands> data = null;
 
     @SerializedName("globalIdLocal")
     @Expose
@@ -18,11 +18,11 @@ public class IpmaDistritsIslands {
     @Expose
     private String local;
 
-    public List<IpmaDistritsIslands> getData() {
+    public List<IpmaDistrictsIslands> getData() {
         return data;
     }
 
-    public void setData(List<IpmaDistritsIslands> data) {
+    public void setData(List<IpmaDistrictsIslands> data) {
         this.data = data;
     }
 

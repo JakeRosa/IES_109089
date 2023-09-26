@@ -13,6 +13,6 @@ public interface IpmaService {
     Call<IpmaCityForecast> getForecastForACity(@Path("city_id") int cityId);
 
     @GET("distrits-islands.json")
-    Call<IpmaDistritsIslands> getDistritsIslands();
+    Call<IpmaDistrictsIslands> getDistritsIslands();
 
 }
